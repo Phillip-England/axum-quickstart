@@ -33,10 +33,11 @@ async fn main() {
 	let host = "0.0.0.0";
 	let addr = format!("{}:{}", host, port);
 
+
 	// building router
 	let app = Router::new()
 		.route("/", get(handlers::home))
-		.layer(middleware::LayerLog);
+		.layer(middleware::TimingMiddleware);
 
 	// binding and serving
 	println!("development server running on {}", addr);

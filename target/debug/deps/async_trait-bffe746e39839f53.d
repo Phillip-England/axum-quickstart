@@ -1,0 +1,12 @@
+/home/jacex/app/axum-quickstart/target/debug/deps/libasync_trait-bffe746e39839f53.so: /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lib.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/args.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/bound.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/expand.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lifetime.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/parse.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/receiver.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/verbatim.rs
+
+/home/jacex/app/axum-quickstart/target/debug/deps/async_trait-bffe746e39839f53.d: /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lib.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/args.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/bound.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/expand.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lifetime.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/parse.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/receiver.rs /home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/verbatim.rs
+
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lib.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/args.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/bound.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/expand.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lifetime.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/parse.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/receiver.rs:
+/home/jacex/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/verbatim.rs:
