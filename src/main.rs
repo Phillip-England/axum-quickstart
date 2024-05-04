@@ -7,6 +7,7 @@ use axum::{
 	routing::get,
 	Router,
 };
+use tower_http::services::ServeDir;
 
 
 #[tokio::main]
@@ -37,7 +38,9 @@ async fn main() {
 	// building router
 	let app = Router::new()
 		.route("/", get(handlers::home))
-		.layer(middleware::TimingMiddleware);
+        .nest_service("/static", ServeDir::new("static"))
+        .layer(middleware::TimingMiddleware)
+        .fallback(get(handlers::not_found));
 
 	// binding and serving
 	println!("development server running on {}", addr);
