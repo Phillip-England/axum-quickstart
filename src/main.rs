@@ -1,8 +1,11 @@
 
 mod handlers;
 mod middleware;
+mod state;
 
 use std::{env, process::exit};
+use std::sync::Arc;
+use axum::Extension;
 use axum::{
 	routing::get,
 	Router,
@@ -34,12 +37,15 @@ async fn main() {
 	let host = "0.0.0.0";
 	let addr = format!("{}:{}", host, port);
 
+    // setting up shared state
+    let shared_state = Arc::new(state::new_app_state());
 
 	// building router
 	let app = Router::new()
 		.route("/", get(handlers::home))
         .nest_service("/static", ServeDir::new("static"))
         .layer(middleware::TimingMiddleware)
+        .layer(Extension(shared_state))
         .fallback(get(handlers::not_found));
 
 	// binding and serving

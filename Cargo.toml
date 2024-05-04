@@ -9,3 +9,6 @@ axum = { version = "0.7.5" }
 tower = { version = "0.4.13" }
 futures-util = { version = "0.3.30" }
 tower-http = { version = "0.5.2", features = ["full"] }
+askama = "0.12.1"
+markdown = "1.0.0-alpha.17"
+syntect = "5.0"
