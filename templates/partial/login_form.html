@@ -1,0 +1,18 @@
+
+<form action="/" method="POST" class="flex flex-col gap-12">
+    <h2 class="text-2xl font-semibold">Login</h2>
+    {% if login_err.is_empty() %}
+        <p class="invisible text-sm">invisible</p>
+    {% else %}
+        <p class="text-sm text-error">{{ login_err }}</p>
+    {% endif %}
+    <div class="flex flex-col gap-1">
+        <label for="username" class="text-sm">Email</label>
+        <input class="text-sm px-2 py-1 rounded border" type="text" autocomplete="current-email" name="email">
+    </div>
+    <div class="flex flex-col gap-1">
+        <label for="password" class="text-sm">Password</label>
+        <input class="text-sm px-2 py-1 rounded border" type="password" name="password">
+    </div>
+    <input type="submit" class="text-sm bg-primary rounded p-2 text-white" />
+</form>

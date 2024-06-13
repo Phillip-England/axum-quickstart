@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/output.css">
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <script src="/static/js/index.js"></script>
+    <title>{{ title }} - CFA Suite</title>
+</head>
+<body>
+    {% include "partial/header.html" %}
+    <main class="p-6">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
