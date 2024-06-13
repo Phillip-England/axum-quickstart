@@ -7,7 +7,8 @@ mod templates;
 use crate::handlers::view_handlers::{
     home,
     not_found,
-    admin_panel
+    admin_panel,
+	logout,
 };
 use crate::handlers::form_handlers::login;
 use crate::middleware::middleware::TimingMiddleware;
@@ -32,7 +33,7 @@ async fn main() {
 
 	// getting hostname
 	let host = "0.0.0.0";
-	let addr = format!("{}:{}", host, "8080");
+	let addr = format!("{}:{}", host, "8000");
 
     // setting up shared state
     let shared_state = Arc::new(new_app_state());
@@ -41,6 +42,7 @@ async fn main() {
 	let app = Router::new()
 		.route("/", get(home))
         .route("/", post(login))
+		.route("/logout", get(logout))
         .route("/admin", get(admin_panel))
         .nest_service("/static", ServeDir::new("static"))
         .layer(TimingMiddleware)

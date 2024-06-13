@@ -1,16 +1,22 @@
-{% extends "partial/admin_nav_menu.html" %}
+{% extends "partial/nav_shell.html" %}
 
 {% block nav_menu %}
-    <li class="mb-4">
-        <a href="/admin" class="block">Dashboard</a>
-    </li>
-    <li class="mb-4">
-        <a href="/admin/users" class="block">Users</a>
-    </li>
-    <li class="mb-4">
-        <a href="/admin/roles" class="block">Roles</a>
-    </li>
-    <li class="mb-4">
-        <a href="/admin/permissions" class="block">Permissions</a>
-    </li>
+
+	{% if path == "/admin" %}
+		<li class="rounded border flex bg-gray-100 border-b-2">
+			<a href="/admin" class="p-4 w-full">Admin Panel</a>
+		</li>
+	{% else %}
+		<li class="rounded border flex border-b-2">
+			<a href="/admin" class="p-4 w-full">Admin Panel</a>
+		</li>
+    {% endif %}
+
+	<li class="rounded border flex border-b-2">
+		<a href="/logout" class="p-4 w-full">Logout</a>
+	</li>
+
+
+
+
 {% endblock %}
