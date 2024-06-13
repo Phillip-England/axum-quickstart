@@ -2,15 +2,15 @@
 mod handlers;
 mod middleware;
 mod state;
-mod templates;
+mod components;
 
-use crate::handlers::view_handlers::{
+use crate::handlers::view::{
     home,
     not_found,
     admin_panel,
 	logout,
 };
-use crate::handlers::form_handlers::login;
+use crate::handlers::form::login;
 use crate::middleware::middleware::TimingMiddleware;
 use crate::state::state::new_app_state;
 

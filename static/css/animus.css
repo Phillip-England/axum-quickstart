@@ -1,0 +1,60 @@
+/* CSS for transitions */
+
+/* Fade-in animation */
+.fade-in {
+    animation: fadeIn 200ms ease-in forwards;
+  }
+  
+  /* Fade-in animation to 50% opacity */
+  .fade-in-half {
+    animation: fadeInHalf 200ms ease-in forwards;
+  }
+  
+  /* Fade-out animation */
+  .fade-out {
+    animation: fadeOut 200ms ease-out forwards;
+  }
+
+  .fade-out-half {
+    animation: fadeOutHalf 200ms ease-out forwards;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for fade-in animation to 50% opacity */
+  @keyframes fadeInHalf {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Keyframes for fade-out animation */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+    /* Keyframes for fade-out animation */
+    @keyframes fadeOutHalf {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0;
+        }
+      }

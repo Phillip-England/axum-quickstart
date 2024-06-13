@@ -1,2 +1,2 @@
-pub mod view_handlers;
-pub mod form_handlers;
+pub mod view;
+pub mod form;
